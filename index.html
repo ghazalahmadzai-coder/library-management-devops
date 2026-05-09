@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Book Library</h1>
+                <img src="images/book.png"  alt="icon">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#Novel">Novel Collection</a>
+                            <a href="#NextLine">Poetry Collection</a>
+                            <a href="#ChildrenBooks">Children’s Collection</a>
+                        </div>
+                        <li>
+                            <a href="#borrow">Borrowing</a></li>
+                    </li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="Novel_Books" id="Novel">
+        <h2 class="section-title">Novel Collection</h2>
+        <div class="books" data-id="The Boy, the Mole, the Fox and the Horse">
+            <div class="book">
+                <img src="images/The Boy, the Mole, the Fox and the Horse.jpg" alt="Book 1">
+                <p>The Boy, the Mole, the Fox and Horse</p>
+                <div class="book-actions">
+                    <a href="pdf/The_Boy_The_Mole_The_Fox_and_The_Horse.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+            <div class="book" data-id="The Alchemist">
+                <img src="images/The Alchemist.jpg" alt="Book 2">
+                <p>The Alchemist</p>
+                <div class="book-actions">
+                    <a href="pdf/The-Alchemist.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                </div>
+            </div>
+            <div class="book" data-id="A Thousand Splendid Suns">
+                <img src="images/A Thousand Splendid Suns.jpg" alt="Book 3">
+                <p>A Thousand Splendid Suns</p>
+                <div class="book-actions">
+                    <a href="pdf/a_thousand_splendid_sun.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                </div>
+            </div>
+            <div class="book" data-id="The Kite Runner">
+                <img src="images/The Kite Runner.jpg" alt="Book 4">
+                <p>The Kite Runner</p>
+                <div class="book-actions">
+                    <a href="pdf/the_kite_runner.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                </div>
+            </div>
+            <div class="book" data-id="Forty Rules Of Love">
+                <img src="images/Forty Rules Of Love.jpg" alt="Book 5">
+                <p>Forty Rules Of Love</p>
+                <div class="book-actions">
+                    <a href="pdf/Forty Rules Of Love.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section for the Next Line of Books -->
+    <section class="Next_Line_Books" id="NextLine">
+        <h2 class="section-title">Poetry Collection</h2>
+        <div class="books" data-id="Harmony">
+            <div class="book">
+                <img src="images/Harmony.jpg" alt="Book 6">
+                <p>Harmony</p>
+                <div class="book-actions">
+                    <a href="pdfs/Book4.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+            <div class="book" data-id="The sun and her flowers">
+                <img src="images/The sun and her flowers.jpg" alt="Book 7">
+                <p>The sun and her flowers</p>
+                <div class="book-actions">
+                    <a href="pdfs/Book5.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+            <div class="book" data-id="Leaves of Grass">
+                <img src="images/Leaves of Grass.jpg" alt="Book 8">
+                <p>Leaves of Grass</p>
+                <div class="book-actions">
+                    <a href="pdf/LEAVES_OF_GRASS.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+            <div class="book" data-id="milk and honey">
+                <img src="images/milk and honey.jpg" alt="Book 9">
+                <p>Milk and honey</p>
+                <div class="book-actions">
+                    <a href="pdfs/Book7.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+            <div class="book" data-id="A Poem for Every Day of the Year">
+                <img src="images/A Poem for Every Day of the Year.jpg" alt="Book 10">
+                <p>A Poem for Every Day of the Year</p>
+                <div class="book-actions">
+                    <a href="pdf/_A_poem_for_every_day_of_the_year.pdf" class="read-me-button" target="_blank">Read me</a>
+                    <a href="#" class="borrow-button">Borrow</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Children's Books Section -->
+<section class="children-books" id="ChildrenBooks">
+    <h2 class="section-title">Children’s Collection</h2>
+    <div class="books">
+        <div class="book" data-id="The Giving Tree">
+            <img src="images/The Giving Tree.jpg" alt="Book 11">
+            <p>The Giving Tree</p>
+            <div class="book-actions">
+                <a href="pdf/where-the-wild-things-are.pdf" class="read-me-button" target="_blank">Read me</a>
+                <a href="#" class="borrow-button">Borrow</a>
+                
+            </div>
+        </div>
+        <div class="book" data-id="The Cat in the Hat">
+            <img src="images/The Cat in the Hat.jpg" alt="Book 12">
+            <p>The Cat in the Hat</p>
+            <div class="book-actions">
+                <a href="pdf/THE-CAT-IN-THE-HAT.pdf" class="read-me-button" target="_blank">Read me</a>
+                <a href="#" class="borrow-button">Borrow</a>
+            </div>
+        </div>
+        <div class="book" data-id="Matilda">
+            <img src="images/Matilda.jpg" alt="Book 13">
+            <p>Matilda</p>
+            <div class="book-actions">
+                <a href="pdf/Matilda.pdf" class="read-me-button" target="_blank">Read me</a>
+                <a href="#" class="borrow-button">Borrow</a>
+                
+            </div>
+        </div>
+        <div class="book" data-id="Winnie-the-Pooh">
+            <img src="images/Winnie-the-Pooh.jpg" alt="Book 14">
+            <p>Winnie-the-Pooh</p>
+            <div class="book-actions">
+                <a href="pdf/Winnie-the-Pooh.pdf" class="read-me-button" target="_blank">Read me</a>
+                <a href="#" class="borrow-button">Borrow</a>
+               
+            </div>
+        </div>
+        <div class="book" data-id="The Little Prince">
+            <img src="images/The Little Prince.jpg" alt="Book 15">
+            <p>The Little Prince</p>
+            <div class="book-actions">
+                <a href="pdf/Little-Prince.pdf" class="read-me-button" target="_blank">Read me</a>
+                <a href="#" class="borrow-button">Borrow</a>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Borrowing Section -->
+<section id="borrow">
+    <h2 class="section-title">Borrowing</h2>
+    <div class="borrow-container">
+        <form id="borrow-form">
+            <label for="borrow-email">Email</label>
+            <input type="email" id="borrow-email" name="email" required>
+ 
+            <label for="borrow-name">Full Name</label>
+            <input type="text" id="borrow-name" name="name" required>
+            
+            <label for="borrow-book">Book</label>
+            <select id="borrow-book" name="book" required>
+
+            </select>
+
+            <div id="message-box" class="message-box"></div>
+
+            <label for="due-date">Return Date</label>
+            <input type="date" id="due-date" name="due-date" required>
+
+            <button type="submit">Borrow</button>
+        </form>
+
+            <div id="borrowing-history" style="display: none;">
+                <h2>Borrowing History</h2>
+                <ul id="history-list"></ul>
+            </div>
+            
+        </ul>
+    </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>Copyright &copy; 2026; designed by <span class="designer">Ghazal Ahmadzai</span></p>
+</footer>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
