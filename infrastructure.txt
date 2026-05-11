@@ -1,0 +1,8 @@
+Book Library Infrastructure Setup
+
+Application: Flask Book Library
+Containerization: Docker
+CI/CD: GitHub Actions
+Database: SQLite
+
+Infrastructure successfully provisioned using Terraform.
